@@ -3,11 +3,9 @@
 /test/
 
 # top level source
-your-tree.js
 your-tree.js.map
 your-tree.d.ts
 your-tree.d.ts.map
-your-tree-mirror.js
 your-tree-mirror.js.map
 your-tree-mirror.d.ts
 your-tree-mirror.d.ts.map
