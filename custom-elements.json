@@ -1,52 +1,29 @@
 {
-  "version": "experimental",
+  "version": "v0.1.0",
   "tags": [
     {
-      "name": "my-element",
-      "path": "./src/my-element.ts",
-      "description": "An example element.",
+      "name": "your-tree",
+      "path": "./src/your-tree.ts",
+      "description": "a tree element.",
       "attributes": [
         {
-          "name": "name",
-          "description": "The name to say \"Hello\" to.",
-          "type": "string",
-          "default": "\"World\""
-        },
-        {
-          "name": "count",
-          "description": "The number of times the button has been clicked.",
-          "type": "number",
-          "default": "0"
+          "name": "data",
+          "description": "tree data",
+          "type": "array",
+          "default": "[]"
         }
       ],
       "properties": [
         {
-          "name": "name",
-          "attribute": "name",
-          "description": "The name to say \"Hello\" to.",
-          "type": "string",
-          "default": "\"World\""
-        },
-        {
-          "name": "count",
-          "attribute": "count",
-          "description": "The number of times the button has been clicked.",
-          "type": "number",
-          "default": "0"
+          "name": "data",
+          "attribute": "data",
+          "description": "tree data",
+          "type": "array",
+          "default": "[]"
         }
       ],
-      "slots": [
-        {
-          "name": "",
-          "description": "This element has a slot"
-        }
-      ],
-      "cssParts": [
-        {
-          "name": "button",
-          "description": "The button"
-        }
-      ]
+      "slots": [],
+      "cssParts": []
     }
   ]
 }

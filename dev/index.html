@@ -3,18 +3,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>&lt;my-element> Demo</title>
-    <script type="module" src="../my-element.js"></script>
+    <title>&lt;your-tree> Demo</title>
+    <script type="module" src="../your-tree.js"></script>
     <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
+      body {
+        /* background-color: orange; */
       }
     </style>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <your-tree data='[{"name":"item1","children":[{"name":"item1-1","children":[{"id": "1-1","name":"item1-1-1"}]}]}]'></your-tree>
+    <script>
+      const yourTreeEl = document.querySelector('your-tree')
+      console.log(yourTreeEl)
+      yourTreeEl.addEventListener('item-click', e => {
+        console.log(e)
+      })
+    </script>
   </body>
 </html>
